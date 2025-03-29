@@ -1,0 +1,81 @@
+
+**** 05/31/24 18:26:06 ***** PSpice 23.1.0 (17 April 2024) **** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sim1"  [ c:\users\solx\desktop\cad\proiect-pspicefiles\schematic1\sim1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sim1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../yellowled.lib" 
+* From [PSPICE NETLIST] section of C:\Users\solx\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 200ms 0 SKIPBP 
+.MC 10 TRAN MC YMAX OUTPUT ALL SEED=200 
+------------$
+ERROR(ORPSIM-16295): Invalid Expression: Specify either current(I) or voltage(V) or digital(D).
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PROIECT
+V_Vcc         +VCC 0 15V
+V_-Vcc         0 -VCC 15V
+R_R1         VO_DIV1 +VCC R_R1 78.7k TC=0,0 
+.model        R_R1 RES R=1 DEV=1% TC1=0 TC2=0
+R_R2         0 VO_DIV1  {R} TC=0,0 
+R_R3         N01917 N02306 R_R3 1k TC=0,0 
+.model        R_R3 RES R=1 DEV=1% TC1=0 TC2=0
+R_R4         N22636 AO R_R4 5.23k TC=0,0 
+.model        R_R4 RES R=1 DEV=1% TC1=0 TC2=0
+R_R5         V_REF1 N02428 R_R5 1k TC=0,0 
+.model        R_R5 RES R=1 DEV=1% TC1=0 TC2=0
+R_R13         OUT N03820 R_R13 158k TC=0,0 
+.model        R_R13 RES R=1 DEV=1% TC1=0 TC2=0
+R_R14         N21753 +VCC R_R14 360 TC=0,0 
+.model        R_R14 RES R=1 DEV=1% TC1=0 TC2=0
+R_R9         N06316 N22753 R_R9 28.7k TC=0,0 
+.model        R_R9 RES R=1 DEV=1% TC1=0 TC2=0
+R_R10         0 VREF2 R_R10 583 TC=0,0 
+.model        R_R10 RES R=1 DEV=1% TC1=0 TC2=0
+R_R11         VREF2 +VCC R_R11 1k TC=0,0 
+.model        R_R11 RES R=1 DEV=1% TC1=0 TC2=0
+R_R8         AO N06316 R_R8 11k TC=0,0 
+.model        R_R8 RES R=1 DEV=1% TC1=0 TC2=0
+D_D2          N21731 0 YellowLED 
+R_R12         N21731 OUT R_R12 357 TC=0,0 
+.model        R_R12 RES R=1 DEV=1% TC1=0 TC2=0
+R_R7         V_REF1 +VCC R_R7 1k TC=0,0 
+.model        R_R7 RES R=1 DEV=1% TC1=0 TC2=0
+R_R6         0 V_REF1 R_R6 782 TC=0,0 
+.model        R_R6 RES R=1 DEV=1% TC1=0 TC2=0
+Q_Q2         N21753 N03820 0 BC108C 
+X_U7         N06316 VREF2 +VCC -VCC N17258 LM741
+X_U8         N02428 N02306 +VCC -VCC AO LM741
+X_U9         VO_DIV1 N01917 +VCC -VCC N01917 LM741
+X_U10         OUT N17258 +VCC 0 OUT LM741
+R_R15         N22753 N17258 R_R15 604 TC=0,0 
+.model        R_R15 RES R=1 DEV=1% TC1=0 TC2=0
+R_R16         N02306 N22636 R_R16 6.98 TC=0,0 
+.model        R_R16 RES R=1 DEV=1% TC1=0 TC2=0
+.PARAM  m_carbon=200 r={((-8.8889*{m_carbon}) + 79444)}
+
+**** RESUMING sim1.cir ****
+.END
+

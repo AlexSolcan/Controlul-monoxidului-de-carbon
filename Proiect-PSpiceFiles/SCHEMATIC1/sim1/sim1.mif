@@ -1,0 +1,4 @@
+ lib=c:\users\solx\desktop\cad\yellowled.lib, offset=1149, size=61
+ lib=C:\Cadence\OrCADX_23.1\tools\PSpice\Library\ebipolar.lib, offset=2303, size=365
+ lib=C:\Cadence\OrCADX_23.1\tools\PSpice\Library\opamp.lib, offset=58704, size=430
+ lib=C:\Cadence\OrCADX_23.1\tools\PSpice\Library\opamp.lib, offset=101320, size=1093

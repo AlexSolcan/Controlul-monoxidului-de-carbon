@@ -1,0 +1,10 @@
+STATUS: PSpice Model Import Wizard for "Capture" (17.2.0.d001)
+STATUS:  
+   INFO: OLB driven flow
+   INFO: Input File: D:\2126 HEIHEI\LED\TESTYELLOWLED.DSN
+   INFO: Symbol Name: @TESTYELLOWLED.SCHEMATIC1(sch_1):INS101@BREAKOUT.Dbreak.Normal(chips)
+   INFO: Implementation type already exists on symbol "@TESTYELLOWLED.SCHEMATIC1(sch_1):INS101@BREAKOUT.Dbreak.Normal(chips)".
+   INFO: Implementation already exists on symbol "@TESTYELLOWLED.SCHEMATIC1(sch_1):INS101@BREAKOUT.Dbreak.Normal(chips)".
+   INFO: Implementation type already exists on symbol "@TESTYELLOWLED.SCHEMATIC1(sch_1):INS101@BREAKOUT.Dbreak.Normal(chips)".
+   INFO: Implementation already exists on symbol "@TESTYELLOWLED.SCHEMATIC1(sch_1):INS101@BREAKOUT.Dbreak.Normal(chips)".
+STATUS: 0 Error messages, 0 Warning messages

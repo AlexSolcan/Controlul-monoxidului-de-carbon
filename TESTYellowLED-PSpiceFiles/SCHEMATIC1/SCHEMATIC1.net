@@ -1,0 +1,4 @@
+* source TESTYELLOWLED
+V_V1         N00141 0 5V
+R_R1         N00141 AN  120 TC=0,0 
+D_D2         AN 0 Dbreak 

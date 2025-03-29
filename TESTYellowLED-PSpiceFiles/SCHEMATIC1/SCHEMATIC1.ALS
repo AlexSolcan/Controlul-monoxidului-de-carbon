@@ -1,0 +1,7 @@
+.ALIASES
+V_V1            V1(+=N00141 -=0 ) CN @TESTYELLOWLED.SCHEMATIC1(sch_1):INS35@SOURCE.VDC.Normal(chips)
+R_R1            R1(1=N00141 2=AN ) CN @TESTYELLOWLED.SCHEMATIC1(sch_1):INS60@ANALOG.R.Normal(chips)
+D_D2            D2(1=AN 2=0 ) CN @TESTYELLOWLED.SCHEMATIC1(sch_1):INS101@BREAKOUT.Dbreak.Normal(chips)
+_    _(ca=0)
+_    _(an=AN)
+.ENDALIASES
